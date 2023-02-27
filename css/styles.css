@@ -317,22 +317,23 @@ display: flex;
 width: 232px;
 padding: 0;
 margin: 0;
+gap: 24px;
 }
 .link-social{
-  display: inline-flex;
+  display: flex;
   padding: 0;
   margin: 0;
   width: 40px;
   height: 40px;
   background-color: var(--logo-primbutton-color);
-  position: center;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  
 }
-.team-social li + li{
+/* .team-social li + li{
 margin-left: 24px;
-}
+} */
 .social{
 width: 16px;
 height: 16px;
@@ -358,6 +359,43 @@ background-color: var(--active);
   border: 1px solid #E7E9FC;
   border-top: none;
 }
+
+.customers-list{
+list-style: none;
+display: flex;
+padding: 0;
+margin: 0;
+gap: 24px;
+width: 1128px;
+}
+
+.link-customers{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-customers{
+  width: 104px;
+  height: 56px;
+  fill:#8E8F99;
+}
+.link-customers:hover .icon-customers,
+.link-customers:focus .icon-customers{
+fill: var(--active);
+}
+.link-customers:hover,
+.link-customers:focus{
+border-color: var(--active);
+
+}
+
+
 .footer{
   background-color:var(--title-color);
   padding-top: 100px;
@@ -377,6 +415,53 @@ letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
 }
+
+.right-container {
+
+  width: 208px;
+  height: 80px;
+}
+.footer-social-media-title {
+display: block;
+margin-bottom: 16px;
+color: var(--footer-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+}
+.link-footer-icon{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  }
+
+.link-footer-icon:hover{
+  background-color: #31D0AA;
+}
+
+.footer-icon{
+  width: 24px;
+  height: 24px;
+}
+.footer-left-right{
+  display: flex;
+}
+.left-container{
+  margin-right: 120px;
+}
+
+ /*------ PORTFOLIO -------*/
 .list.card-set {
   display: flex;
   flex-wrap: wrap;
