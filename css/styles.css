@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p{
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* logo */
 
@@ -180,6 +180,7 @@ border: 1px solid var(--footer-text-color);
 .button.secondary:focus {
   background-color: var(--active);
   color: var(--hero-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
  
 /* sections */
@@ -304,12 +305,12 @@ color: var(--primary-text-color);
 }
 .team-member{
 background-color: #fff;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-description{
   padding: 32px 16px 32px 16px;
   background: #FFFFFF;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-social{
 list-style: none;
@@ -471,6 +472,7 @@ letter-spacing: 0.02em;
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
+  border: 1px solid #E7E9FC;
 }
 .flex-element:nth-child(3n){
   margin-right: 0;
@@ -491,6 +493,13 @@ letter-spacing: 0.02em;
   justify-content: center;
   column-gap: 24px;
 }
+
+.hover-shadow:hover{
+border: 1px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
 /* .list.work-departments{
   display: flex;
   justify-content: center;
