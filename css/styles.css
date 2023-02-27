@@ -28,6 +28,7 @@ body {
 /* 1. header */
 .header{
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    }
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
@@ -163,6 +164,7 @@ background-color: var(--logo-primbutton-color);
 padding: 16px 32px;
 min-width: 169px;
 border: none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -181,6 +183,7 @@ border: 1px solid var(--footer-text-color);
   background-color: var(--active);
   color: var(--hero-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
 }
  
 /* sections */
@@ -253,6 +256,8 @@ background-size: 64px;
 background-repeat: no-repeat;
 background-position: center;
 margin-bottom: 8px;
+border-radius: 4px;
+
 }
 .icon-satelite::before{
 background-image: url(../images/antenna.svg);
@@ -301,6 +306,7 @@ color: var(--primary-text-color);
 }
 .list-image {
   width: 360px;
+
   display: block;
 }
 .team-member{
@@ -315,7 +321,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .team-social{
 list-style: none;
 display: flex;
-width: 232px;
 padding: 0;
 margin: 0;
 gap: 24px;
@@ -359,6 +364,8 @@ background-color: var(--active);
   padding: 32px 16px;
   border: 1px solid #E7E9FC;
   border-top: none;
+  width: 360px;
+  height: 120px;
 }
 
 .customers-list{
@@ -367,7 +374,6 @@ display: flex;
 padding: 0;
 margin: 0;
 gap: 24px;
-width: 1128px;
 }
 
 .link-customers{
@@ -419,11 +425,9 @@ letter-spacing: 0.02em;
 
 .right-container {
 
-  width: 208px;
-  height: 80px;
+
 }
 .footer-social-media-title {
-display: block;
 margin-bottom: 16px;
 color: var(--footer-text-color);
 font-weight: 500;
@@ -447,7 +451,8 @@ letter-spacing: 0.02em;
   align-items: center;
   }
 
-.link-footer-icon:hover{
+.link-footer-icon:hover,
+.link-footer-icon:focus{
   background-color: #31D0AA;
 }
 
@@ -470,9 +475,10 @@ letter-spacing: 0.02em;
 }
 .flex-element{
   width: 360px;
+  height: 420px;
   margin-right: 24px;
   margin-bottom: 48px;
-  border: 1px solid #E7E9FC;
+  
 }
 .flex-element:nth-child(3n){
   margin-right: 0;
@@ -494,14 +500,7 @@ letter-spacing: 0.02em;
   column-gap: 24px;
 }
 
-.hover-shadow:hover{
-border: 1px solid #F4F4FD;
+a:hover .card-description,
+a:focus .card-description{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-
-/* .list.work-departments{
-  display: flex;
-  justify-content: center;
-  column-gap: 24px;
-} */
